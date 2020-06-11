@@ -2,7 +2,7 @@
 const HOME = "/";
 const JOIN = "/join";
 const LOGIN = "/login";
-const LOGOUT = "logout";
+const LOGOUT = "/logout";
 const SEARCH = "/search";
 
 // Users
@@ -25,12 +25,24 @@ const routes = {
     logout: LOGOUT,
     search: SEARCH,
     users: USERS,
-    userDetail: USER_DETAIL,
+    userDetail: (id) => {
+        if (id) {
+            return `/users/${id}`;
+        } else {
+            return USER_DETAIL;
+        }
+    },
     editProfile: EDIT_PROFILE,
     changePassword: CHANGE_PASSWORD,
     videos: VIDEOS,
     upload: UPLOAD,
-    videoDetail: VIDEO_DETAIL,
+    videoDetail: (id) => {
+        if(id){
+            return `/videos/${id}`;
+        } else {
+            return VIDEO_DETAIL;
+        }
+    },
     editVideo: EDIT_VIDEO,
     deleteVideo: DELETE_VIDEO
 };
