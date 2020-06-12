@@ -140,3 +140,7 @@ __pycache__
 *~
 
 package-lock.json
+
+.fusebox/
+package-lock.json
+uploads
