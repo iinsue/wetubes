@@ -10,6 +10,7 @@ const USERS = "/users";
 const USER_DETAIL = "/:id";
 const EDIT_PROFILE = "/edit-profile";
 const CHANGE_PASSWORD = "/chage-password";
+const ME = "/me";
 
 // Videos (콜론있는 것은 변화하는 값을 의미)
 const VIDEOS = "/videos";
@@ -21,6 +22,10 @@ const DELETE_VIDEO = "/:id/delete";
 // Github
 const GITHUB = "/auth/github";
 const GITHUB_CALLBACK = "/auth/github/callback";
+
+// Facebook
+const FB = "/auth/facebook";
+const FB_CALLBACK = "/auth/facebook/callback";
 
 const routes = {
   home: HOME,
@@ -63,6 +68,9 @@ const routes = {
   },
   gitHub: GITHUB,
   gitHubCallback: GITHUB_CALLBACK,
+  me: ME,
+  facebook: FB,
+  facebookCallback: FB_CALLBACK,
 };
 
 export default routes;
