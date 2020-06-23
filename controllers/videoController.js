@@ -31,7 +31,7 @@ export const search = async (req, res) => {
 
 // Upload
 export const getUpload = (req, res) =>
-  res.render("Upload", { pageTitle: "Upload" });
+  res.render("upload", { pageTitle: "Upload" });
 
 export const postUpload = async (req, res) => {
   const {
