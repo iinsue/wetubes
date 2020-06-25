@@ -558,10 +558,10 @@ input[type="submit"] {
     text-align: center; }
     .video-detail__container .video__comments .video__comment-number {
       font-size: 18px; }
-    .video-detail__container .video__comments .add_comment {
+    .video-detail__container .video__comments .add__comment {
       margin-top: 25px;
       width: 100%; }
-      .video-detail__container .video__comments .add_comment input {
+      .video-detail__container .video__comments .add__comment input {
         width: 100%; }
     .video-detail__container .video__comments .video__comments-list {
       margin-top: 50px; }
